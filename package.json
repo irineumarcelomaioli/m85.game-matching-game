@@ -9,5 +9,20 @@
   },
   "devDependencies": {
     "vite": "^2.8.0"
-  }
+  },
+  "description": "- [ViteJS](https://vitejs.dev)",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irineumarcelomaioli/m85.game-matching-game.git"
+  },
+  "keywords": [
+    "Game"
+  ],
+  "author": "Irineu Marcelo Maioli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irineumarcelomaioli/m85.game-matching-game/issues"
+  },
+  "homepage": "https://github.com/irineumarcelomaioli/m85.game-matching-game#readme"
 }
