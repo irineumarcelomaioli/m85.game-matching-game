@@ -1,11 +1,11 @@
 import './style.css';
 
-const CardGame = () => {
+const CardGame = (icon = "card-back", alt = "Logo m85.game") => {
   return /*html*/`
     <article class="card-game">
-      <img src='images/cardGameBack.png' alt='Logo m85.game'>
+      <img src='images/${icon}.png' alt='${alt}'>
     </article>
   `;
 }
 
-export default CardGame;
+export default CardGame; 
