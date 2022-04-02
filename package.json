@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/irineumarcelomaioli/m85.game-matching-game/issues"
   },
-  "homepage": "https://github.com/irineumarcelomaioli/m85.game-matching-game#readme"
+  "homepage": "https://github.com/irineumarcelomaioli/m85.game-matching-game#readme",
+  "dependencies": {
+    "gitmoji-cli": "^4.7.0"
+  }
 }
