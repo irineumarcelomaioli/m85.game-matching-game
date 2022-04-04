@@ -9,8 +9,8 @@ const ScoreBoard = () => {
       ${PlayerName("Player 01")}
       ${PlayerScore(1)}
       ${VsPlayer()}
+      ${PlayerScore(1)}
       ${PlayerName("Player 02")}
-      ${PlayerScore()}
     </header>
   `;
 }
