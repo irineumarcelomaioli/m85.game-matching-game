@@ -2,8 +2,8 @@ import './style.css';
 import CardFrontBack from '../../components/CardFrontBack';
 import cards from './data';
 
-const BoardGame = (amountCards) => {
-  const flipAndHideCards = ( $cardsActive) => {
+const BoardGame = () => {
+  const flipAndHideCards = ($cardsActive) => {
     $cardsActive.forEach((card) => card.classList.remove('-active'));
   }
   const swapPlayer = ($arrowDown) => {
@@ -19,10 +19,10 @@ const BoardGame = (amountCards) => {
       setTimeout(() => {
         flipAndHideCards($cardsActive);
         swapPlayer($arrowDown);
-      }, 1000);
+      }, 600);
     }
   }
-  const htmlCardsList = cards.map((card) => CardFrontBack(card.icon, cards.altIcon));
+  const htmlCardsList = cards.map((card) => CardFrontBack(card.icon, card.altIcon, card.cardId));
   const $htmlCards = htmlCardsList.join('');
 
   return /*html*/`
