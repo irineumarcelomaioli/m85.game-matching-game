@@ -1,7 +1,7 @@
 import CardGame from '../CardGame';
 import './style.css';
 
-const CardFrontBack = (icon, altIcon, cardId = 0) => {
+const CardFrontBack = (cardId, icon, altIcon, cardIdentify) => {
   window.cardFrontBack = {};
   window.cardFrontBack.handleClick = (event) => {
     event.preventDefault();
@@ -11,12 +11,12 @@ const CardFrontBack = (icon, altIcon, cardId = 0) => {
   }
 
   return /*html*/`
-    <article class="card-front-back" onClick="cardFrontBack.handleClick(event)"  data-card-id='${cardId}'>
+    <article id="${cardId}" class="card-front-back" onClick="cardFrontBack.handleClick(event)"  data-card-identify='${cardIdentify}'>
       <div class="card -front">
         ${CardGame()}
       </div>
       <div class="card -back">
-        ${CardGame(icon, altIcon, cardId)}
+        ${CardGame(icon, altIcon)}
       </div>
     </article>
   `;

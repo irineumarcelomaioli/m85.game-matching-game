@@ -20,9 +20,12 @@ const BoardGame = () => {
         flipAndHideCards($cardsActive);
         swapPlayer($arrowDown);
       }, 600);
+    } else {
+      console.log("uma carta");
+      console.log($cardsActive);
     }
   }
-  const htmlCardsList = cards.map((card) => CardFrontBack(card.icon, card.altIcon, card.cardId));
+  const htmlCardsList = cards.map((card) => CardFrontBack(card.cardId, card.icon, card.altIcon, card.identify));
   const $htmlCards = htmlCardsList.join('');
 
   return /*html*/`
